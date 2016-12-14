@@ -1,0 +1,11 @@
+.mainui #sub-menu {
+	padding-left: 40px;
+}
+
+.mainui #sub-sub-menu {
+	padding-left: 60px;
+}
+
+.charttemplate .bg-color-gray{
+    background-color:#0054FF
+}

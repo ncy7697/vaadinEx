@@ -1,0 +1,6 @@
+@import "variables";
+@import "hiot.scss";
+
+.hiot {
+   @include hiot;
+}

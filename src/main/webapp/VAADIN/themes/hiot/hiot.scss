@@ -1,0 +1,45 @@
+@import "../valo/valo.scss";
+
+@mixin hiot {
+  @include valo;
+  // your styles go here
+
+  @include base-button($name: blue-button);
+  .blue-button {
+    color: blue;
+  }
+
+  @include base-button($name: brown-button);
+  .brown-button {
+    color: brown;
+    background-color: black;
+  }
+
+  @include base-button($name: chartreuse-button);
+  .chartreuse-button {
+    color: chartreuse;
+    background-color: beige;
+  }
+
+  @include base-button($name: next-button);
+  .next-button {
+    width: 63px;
+    height: 63px;
+    //border-image-width: auto;
+    //background-image: url(icons/next.PNG);
+  }
+
+  @include base-button($name: paging-button);
+  .paging-button {
+
+
+    position: absolute;
+    border-radius: inherit;
+    transition: box-shadow 180ms, border 180ms;
+  }
+
+
+
+
+
+}

@@ -1,0 +1,9 @@
+#test-grid-1{
+    border : 1px solid;
+}
+
+/*#test-grid-1 .v-gridlayout-slot {background-color:#D9E5FF;}*/
+#test-grid-1 .font-center {top: 25%; position: relative; text-align: center;}
+
+.v-textfield, v-datefield-textfield {}
+

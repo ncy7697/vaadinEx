@@ -1,0 +1,45 @@
+spring:
+  profiles:
+    active: local
+
+  datasource:
+    url: jdbc:postgresql://localhost:4432/testDb
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 1
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+#    hibernate:
+#      naming-strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
+#    generate-ddl: false
+#    hibernate:
+#      ddl-auto: create-drop
+# hsqldb, h2, derby : create-drop id default
+# other db : none is default
+
+
+
+---
+spring:
+  profiles: local
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.web: INFO
